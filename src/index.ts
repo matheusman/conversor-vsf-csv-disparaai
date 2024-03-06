@@ -2,7 +2,7 @@ import fs from "fs";
 import sourcePath from "path";
 import readline from "readline";
 
-class ArrContato {
+export class ArrContato {
   contato: string[];
 
   constructor(arr: string[]) {
@@ -19,7 +19,7 @@ class FileSystem {
   contact: string[];
 
   constructor() {
-    this.sourcePath = sourcePath.join(__dirname, "./index.txt");
+    this.sourcePath = sourcePath.join(__dirname, "..", "./index.txt");
     this.confirm = false;
     this.begin = "BEGIN";
     this.end = "END";
